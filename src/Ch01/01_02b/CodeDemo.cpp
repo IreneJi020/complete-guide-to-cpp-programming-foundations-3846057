@@ -8,6 +8,8 @@ int main(){
     std::cout << "Hello World!" << std::endl;
 
     std::cout << std::endl << std::endl;
-    
+
     return 0;
 }
+
+// or use #include <cstdio> and printf("Hello World!\n");
