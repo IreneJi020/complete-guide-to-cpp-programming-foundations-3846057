@@ -26,7 +26,7 @@ int main(){
 
     std::cout << "Reaction time: " << elapsed_seconds->count() << "s" << std::endl;
 
-    delete start;
+    delete start; // release memory (destruct)
     delete end;
     delete elapsed_seconds;
 
