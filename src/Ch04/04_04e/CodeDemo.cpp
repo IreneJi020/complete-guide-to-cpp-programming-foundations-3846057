@@ -13,15 +13,15 @@ using Duration = std::chrono::duration<double>;
 
 int main(){
     TimePoint *start, *end;
-    Duration *elapsed_seconds = new Duration();
+    Duration *elapsed_seconds = new Duration(); // allocate memory dynamically at declaration using "new classname()" where classname() is construct
     std::string input;
 
-    start = new TimePoint(Clock::now());
+    start = new TimePoint(Clock::now()); // allocate memory
 
     std::cout << "Type 'start' as quickly as you can and hit ENTER: " << std::flush;
     std::cin >> input;
 
-    end = new TimePoint(Clock::now());
+    end = new TimePoint(Clock::now()); // allocate memory
     *elapsed_seconds = *end - *start;
 
     std::cout << "Reaction time: " << elapsed_seconds->count() << "s" << std::endl;
